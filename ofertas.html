@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ofertas</title>
+        <link rel="stylesheet" href="css/ofertas.css">
+    </head>
+    <body>
+        <nav>
+        </nav>
+        <main>
+            <h2>Lista de ofertas laborales y hogar disponibles:</h2>
+            <!-- Al darle al botón de ofertar se desplegará un panel con un formulario-->
+            <section>
+                <!-- Div's con todas las ofertas -->
+                <div class="ofertas">
+                    <img src="imgs/trabajo/background-trabajo-bottom.jpg">
+                    <p>Oferta 1</p>
+                    <button><span class="ofertar">Ofertar </span></button>
+                </div>
+                <div class="ofertas"> 
+                    <img src="imgs/trabajo/secretaria.jpg">
+                    <p>Secretario/a</p>
+                    <button><span class="ofertar">Ofertar </span></button>
+                </div>
+                <div class="ofertas"> 
+                    <p>Oferta 3</p>
+                    <button><span class="ofertar">Ofertar </span></button>
+                </div>
+                <div class="casas"> 
+                    <img src="imgs/casas/casa1.jpg">
+                    <p>Casa 1</p>
+                    <button><span class="solicitar">Solicitar </span></button>
+                </div>
+                <div class="casas"> 
+                    <img src="imgs/casas/casa2.jpg">
+                    <p>Casa 2 Localización: ?</p>
+                    <button><span class="solicitar">Solicitar </span></button>
+                </div>
+            </section>
+            <!-- Este formulario estará visible en un panel que se abrirá-->
+            <div id="formulario">
+                <span id="close">X</span>
+                <form action="#" method="post">
+                    <label for="lblNombre">Nombre y apellidos</label>
+                    <input type="text" name="nombres" id="nombres">
+
+                    <label for="lblEmail">Correo eléctronico</label>
+                    <input type="text" name="email" id="email">
+
+                    <label for="lblDNI">DNI o NIE</label>
+                    <input type="text" name="DNI" id="dni">
+
+                    <label for="lblCurriculum">Curriculum</label>
+
+                    <label for="lblNacionalidad">Nacionalidad</label>
+                    <select id="selectNacionalidad" name="selectNacionalidad">
+                        <option value="australia">Australiana</option>
+                        <option value="canada">Española</option>
+                        <option value="usa">USA</option>
+                      </select>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </main>
+        <footer>
+        </footer>
+    </body>
+</html>

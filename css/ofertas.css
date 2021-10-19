@@ -1,0 +1,144 @@
+/*
+    Autor: Sergio Matamoros Delgado
+    Fecha: 19-10-2021
+    Descripción:
+
+    Licencia: 
+
+*/
+
+body {
+
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* Este se podría omitir, es valor por defecto. */ 
+    justify-content: center;
+    gap: 25px; /* Espaciado de 25 */
+
+}
+
+.ofertas {
+    background-color: gray;
+    text-align: center;
+    
+    /* Valores mínimos por defecto. */
+    min-width: 100px;
+    min-height: 50px;
+}
+
+/*
+    Solicitar casa
+*/
+
+.casas {
+    background-color: gray;
+    text-align: center;
+    
+    /* Valores mínimos por defecto. */
+    min-width: 100px;
+    min-height: 50px;
+}
+
+div.casas button {
+    background-color: lime;
+}
+
+img {
+    width: 150px;
+    height: 100px;
+}
+
+
+/* Diseño botones */
+
+button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+    width: 110px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+button span:after {
+    content: '\00bb'; /* Código del texto a poner 00bb representa: '>>' */
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+button:hover span {
+    padding-right: 25px;
+}
+
+button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+/* 
+=====================================
+    Formulario
+=====================================
+*/
+span#close {
+    color: #222;
+    cursor: pointer;
+}
+
+div#formulario {
+    width: 30%;
+    height: 20%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+
+    margin: auto;
+    
+    z-index: 1;
+
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+input[type=submit]:hover {
+    background-color: #45a049;
+}
