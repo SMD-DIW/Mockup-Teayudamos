@@ -6,38 +6,56 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Ofertas</title>
         <link rel="stylesheet" href="css/ofertas.css">
+        <link rel="stylesheet" href="css/common.css" />
     </head>
     <body>
-        <nav>
-        </nav>
+        <header>
+            <nav>
+                <div>
+                    <a href="index.html"><img src="imgs/logo.jpeg" /></a>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-menu-item"><a href="index.html" class="nav-menu-link">Inicio</a></li>
+                    <li class="nav-menu-item"><a href="teayudamos.html" class="nav-menu-link">Te Ayudamos</a></li>
+                    <li class="nav-menu-item"><a href="ofertas.html" class="nav-menu-link">Ofertas</a></li>
+                    <li class="nav-menu-item"><a href="asociados.html" class="nav-menu-link">Asociados</a></li>
+                </ul>
+            </nav>
+        </header>
         <main>
-            <section>
-                <!-- Div's con todas las ofertas -->
-                <div class="ofertas">
-                    <img src="imgs/trabajo/background-trabajo-bottom.jpg">
-                    <p>Oferta 1</p>
-                    <button><span class="ofertar">Ofertar </span></button>
-                </div>
-                <div class="ofertas"> 
-                    <img src="imgs/trabajo/secretaria.jpg">
-                    <p>Secretario/a</p>
-                    <button><span class="ofertar">Ofertar </span></button>
-                </div>
-                <div class="ofertas"> 
-                    <p>Oferta 3</p>
-                    <button><span class="ofertar">Ofertar </span></button>
-                </div>
-                <div class="ofertas"> 
-                    <p>Oferta 4</p>
-                    <button><span class="ofertar">Ofertar </span></button>
-                </div>
-                <div class="ofertas"> 
-                    <p>Oferta 5</p>
-                    <button><span class="ofertar">Ofertar </span></button>
-                </div>
-            </section>
+            <div id="formulario">
+                <form action="#" method="post">
+                    <label for="lblNombre">Nombre de la empresa</label>
+                    <input type="text" name="nombres" id="nombres">
+
+                    <label for="lblEmail">Correo eléctronico [EMPRESA]</label>
+                    <input type="text" name="email" id="email">
+
+                    <label for="lblDNI">CIF/NIF</label>
+                    <input type="text" name="cif" id="dni">
+
+                    <label for="lblCurriculum">Curriculum</label>
+
+                    <label for="lblNacionalidad">País</label>
+                    <select id="selectNacionalidad" name="selectNacionalidad">
+                        <option value="australia">Australiana</option>
+                        <option value="canada">Española</option>
+                        <option value="usa">USA</option>
+                      </select>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
         </main>
         <footer>
+            <ul class="footer-img">
+              <li class="footer-img-item"><a href="https://www.atresplayer.com"><img src="imgs/atresmedia.png" /></a></li>
+              <li class="footer-img-item"><a href="https://www.cope.es"><img src="imgs/cope.png" /></a></li>
+              <li class="footer-img-item"><a href="https://www.youtube.com/channel/UCcrBhhQdWjJjjLyrOvYzMaA"><img src="imgs/mundomaldini.png" /></a></li>
+              <li class="footer-img-item"><a href="https://www.bancosantander.es/particulares"><img src="imgs/santander.png" /></a></li>
+            </ul>
+            <div>
+              Tlfn: 924 88 75 63 || Correo: fundacion@teayudamos.com
+            </div>
         </footer>
     </body>
 </html>
